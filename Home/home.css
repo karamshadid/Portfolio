@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+video {
+  position: fixed;
+  z-index: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+h2 {
+  position: relative;
+  padding-left: 20px;
+  flex: 0.8;
+  color: rgb(119, 128, 116);
+}
+
+.nav {
+  display: flex;
+}
+
+.buttons {
+  display: inline-block;
+}
+
+.buttons a {
+  position: relative;
+  display: inline-block;
+  margin: 25px 0px;
+  color: rgb(119, 128, 116);
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+}
+
+.click {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 170px;
+  transition: all 0.5s ease;
+  filter: opacity(50%);
+}
+
+.click button {
+  padding: 20px;
+  width: 20%;
+  border: solid black 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  background: white;
+  border-style: hidden;
+  transition: all 1s ease;
+  text-transform: uppercase;
+}
+
+.click button:hover {
+  width: 30%;
+  font-size: 30px;
+  filter: opacity(100%);
+}
+
+.buttons a:hover,
+.buttons a:focus {
+  outline: none;
+}
+
+.buttons a span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+  padding: 10px;
+}
+
+.buttons a span::before {
+  position: absolute;
+  top: 90%;
+  content: attr(data-hover);
+  font-weight: 700;
+  transform: translate3d(0, 0, 0);
+}
+
+.buttons a:hover span,
+.buttons a:focus span {
+  transform: translateY(-100%);
+  padding-top: 0;
+}
+
+q {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: 110px;
+  font-size: 45px;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(119, 128, 116);
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.rights {
+  text-align: center;
+  color: rgb(119, 128, 116);
+}
+
+.rights p a {
+  text-decoration: none;
+  color: rgb(119, 128, 116);
+  padding-left: 20px;
+}
+
+.right p {
+  color: color: rgb(119, 128, 116);
+  text-align: center;
+}
+
+@keyframes fab {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+}
+
+.icons i:hover {
+  animation: fab 1s;
+}

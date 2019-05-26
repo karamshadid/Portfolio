@@ -1,0 +1,135 @@
+* {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0
+}
+
+/* body {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+} */
+body {
+  background: white;
+}
+
+h3 {
+  font-size: 50px;
+  color: rgb(119, 128, 116)
+}
+
+.nav h2 {
+  color: rgb(119, 128, 116);
+}
+
+.buttons span {
+  color: rgb(119, 128, 116);
+}
+
+.archive {
+  display: block;
+  font-size: 50px;
+}
+
+.archive h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 50px;
+  transition: 1.5s;
+}
+
+.archive li {
+  font-size: 30px;
+  line-height: 70px;
+  color: white;
+  transition: all 5s ease-in-out
+}
+
+#aboutme {
+  background-image: url("chess.jpg");
+  background-size: cover;
+  background-color: lightblue;
+  margin-top: -36px;
+  padding: 100px;
+  margin-bottom: 5px;
+}
+
+.components {
+  overflow: hidden;
+  margin: 0;
+  height: 0;
+  transition: all 1.5s ease-in-out;
+  filter: opacity(0%);
+}
+
+#aboutme:hover .components {
+  height: 500px;
+  overflow: visible;
+  filter: opacity(100%);
+}
+
+#aboutme:hover h2 {
+  font-size: 20px;
+  text-align: left;
+}
+
+#education {
+  background-image: url("education.jpg");
+  background-size: cover;
+  background-color: rgb(119, 123, 214);
+  padding: 100px;
+  margin-bottom: 5px;
+}
+
+#education:hover .components {
+  height: 500px;
+  overflow: visible;
+  filter: opacity(100%);
+}
+
+#education:hover h2 {
+  font-size: 20px;
+  text-align: left;
+}
+
+#careers {
+  background-image: url("stairs.jpg");
+  background-size: cover;
+  padding: 100px;
+  margin-bottom: 5px;
+}
+
+#careers:hover .components {
+  height: 500px;
+  overflow: visible;
+  filter: opacity(100%);
+}
+
+#careers:hover h2 {
+  font-size: 20px;
+  text-align: left;
+}
+
+#projects {
+  background-image: url("project.jpg");
+  background-size: cover;
+  padding: 100px;
+  margin-bottom: 5px;
+}
+
+#projects:hover .components {
+  height: 500px;
+  overflow: visible;
+  filter: opacity(100%);
+}
+
+#projects:hover h2 {
+  font-size: 20px;
+  text-align: left;
+}
+
+#footer {
+  position: relative;
+  margin-top: 50px;
+}
